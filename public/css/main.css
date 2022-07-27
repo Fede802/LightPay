@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+header h4 {
+    color: White;
+}
+
+body {
+    background-color: #eee
+}
+
+.logo,
+.logoh,
+a,
+button {
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 300;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.logoh {
+    flex-grow: 3;
+    font-size: 3em;
+    text-shadow: 2px 0 0 rgb(0, 0, 0),
+        -2px 0 0 rgb(0, 0, 0),
+        0 2px 0 rgb(0, 0, 0),
+        0 -2px 0 rgb(0, 0, 0),
+        1px 1px rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0);
+}
+
+.logo {
+    flex-grow: 2.2;
+    font-size: 3em;
+    text-shadow: 2px 0 0 rgb(0, 0, 0),
+        -2px 0 0 rgb(0, 0, 0),
+        0 2px 0 rgb(0, 0, 0),
+        0 -2px 0 rgb(0, 0, 0),
+        1px 1px rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 2px solid black;
+    column-gap: 20px;
+    background-image: url("../img/headbg.jpg");
+    background-position: center;
+
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 2px solid black;
+    column-gap: 20px;
+    background-image: url("./img/headbg.jpg");
+    background-position: center;
+
+}
+
+.menu,
+a {
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 300;
+    /* font-size */
+    /* color */
+    text-decoration: none;
+
+}
+
+.menu {
+    list-style: none;
+
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+nav {
+    flex-grow: 4;
+}
+
+.menu li a {
+    transition: all .3s ease;
+}
+
+.menu a:hover {
+    color: #02bb96;
+}
+
+.menu li a.selected {
+    color: #009879;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 9px 25px;
+    background: #009879;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background: #02bb96;
+}
+
+button:disabled{
+    font-size: 1.2em;
+    padding: 9px 25px;
+    background: #45665f;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.title {
+    padding-top: 25px;
+    text-align: center;
+}
+
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexVert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexOriz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thr {
+    width: 33%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    /* position: relative; */
+    padding: 10px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: left;
+    padding: 30px;
+    margin: auto;
+    gap: 10px;
+    width: 100%;
+    background: #fff;
+    /* text-align: center; */
+    border-radius: 10px;
+    /* flex-flow: row wrap; */
+    /* flex-basis:  | auto; */
+    /* gap: 1gap: 10px0px */
+    /* padding: 10px, 10px ,10px ,10px ,10px, 10px ,10px ,10px;  */
+    /* box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); */
+}
+
+
+.card h4 {
+    font-size: 1.5em;
+
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.card p {
+    /* font-size: 12px; */
+    /* margin-bottom: 15px; */
+    font-size: 1.5em;
+    margin: auto;
+    text-transform: uppercase;
+    flex-grow: 4;
+}
+
+.card button {
+    /* font-size: 12px; */
+    /* margin-bottom: 15px; */
+    text-transform: uppercase;
+
+    font-size: 0.8em;
+    padding: 9px 25px;
+    background: #00987a6e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.card button.active {
+    background: #009879;
+}
+
+.card button:hover {
+    background: #02bb96;
+}
+
+.recent {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.recent-list {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+table thead tr {
+    color: #fff;
+    background: #34AF6D;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background: #f3f3f3;
+}
+
+.table tbody tr.active {
+    font-weight: bold;
+    color: #4AD489;
+}
+
+.table button {
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #4AD489;
+}
+
+.table button:hover {
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: crimson;
+}
+
+.form-container {
+    min-height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 60px;
+}
+
+.form-container form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.form-container form input,
+.form-container form select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.form-container form select option {
+    background: #fff;
+}
+
+.form-container form .form-btn {
+    background: #009879;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+    background: #02bb96;
+
+}
+
+.form-container form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-container form p a {
+    color: #3f9237;
+}
+
+.form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+::selection {
+    color: #fff;
+    background: #664AFF;
+}
+
+.wrapper {
+    max-width: 450px;
+    margin: 150px auto;
+}
+
+.wrapper .search-input {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input.active input {
+    border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.897);
+}
+
+.search-input.active .autocom-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.autocom-box li {
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+    display: block;
+}
+
+.autocom-box li:hover {
+    background: #efefef;
+}
+
+.search-input .icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+}
+
+/* CSS for animated bouncing loader. */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Loader circles */
+.loader>span {
+    background: #31e90c;
+    border-radius: 50%;
+    margin: 15rem 0.5rem;
+    animation: bouncingLoader 0.6s infinite alternate;
+}
+
+.loader>span:nth-child(2) {
+    background: #31e90cb9;
+    animation-delay: 0.2s;
+}
+
+.loader>span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Define the animation called bouncingLoader. */
+@keyframes bouncingLoader {
+    from {
+        width: 0.1rem;
+        height: 0.1rem;
+        transform: translate3d(0);
+    }
+
+    to {
+        width: 1rem;
+        height: 1rem;
+        transform: translate3d(0, -1rem, 0);
+    }
+}
